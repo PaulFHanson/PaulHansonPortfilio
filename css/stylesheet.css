@@ -1,0 +1,61 @@
+body {
+    background-color: #fdfdfd;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* style the page header */
+  header {
+    background-color: #357960;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* style the navigation menu */
+  nav {
+    background-color: #92a143;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* style the links in the navigation menu */
+  nav a {
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  /* style the main content section */
+  main {
+    margin: 20px;
+  }
+  
+  /* style the heading tags */
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  
+  /* style the footer section */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
