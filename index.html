@@ -13,10 +13,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-192x192.png"> 
+    <link rel="icon" type="image/png" sizes="512x512" href="./android-chrome-512x512.png">   
     <title>Paul Hanson</title>
+    <div class="cookie-popup">
+        <p>This website uses cookies to enhance user experience. By using this website, you consent to the use of cookies in accordance with our <a href="cookie-policy.html">Cookie Policy</a>.</p>
+        <button class="cookie-accept">Accept</button>
+    </div>
     <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" >
 </head>
 <body class="wrapper">
+    <script>
+    var cookiePopup = document.querySelector('.cookie-popup');
+    var cookieAccept = document.querySelector('.cookie-accept');
+
+    cookieAccept.addEventListener('click', function() {
+    cookiePopup.style.display = 'none';
+    document.cookie = 'cookieAccepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+    });
+
+    if (document.cookie.indexOf('cookieAccepted=true') > -1) {
+    cookiePopup.style.display = 'none';
+    }
+    </script>
     <header>
         Welcome to Paul's Page
     </header>
@@ -26,6 +48,10 @@
     <main>
         <h1>Paul Hanson</h1>
         <h2>Welcome to my page! Here you will be able to find my professional headshots, favorite classes, and a link to my resume. Enjoy!</h2>
+        <p>Check out my social media accounts:</p>
+        <a href="https://github.com/PaulFHanson"><img src="./images/GitHub_Logo.png" alt="Github" width="50" height="50"></a><br>
+        <a href="https://www.linkedin.com/in/Paul-F-Hanson/"><img src="./images/linkedin_pic.png" alt="LinkedIn" width="50" height="50"></a><br>
+        <p>Email: PaulHansonn@gmail.com</p>
         <h4>Here are the classes Im currently enrolled in</h4>
         <ul>
             <li>BAIS Capstone</li>
@@ -61,7 +87,9 @@
           </table>
     </main>
     <footer>
-        &copy; Paul Hanson, 2023
+        <p>&copy; 2023 Paul Hanson. All Rights Reserved. <a href="privacy.html">Privacy Policy</a></p><br>
+        <a href="termsandconditions.html">Terms and Conditions</a><br>
+        <a href="cookiepolicy.html">Cookie Policy</a>
     </footer>
 </body>
 </html>
